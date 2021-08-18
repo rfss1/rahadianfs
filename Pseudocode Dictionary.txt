@@ -1,0 +1,46 @@
+- Finding the word "Plyometric" in a dictionary.
+- First Approach : Opening pages one by one. O(n)
+- Second Approach : Opening 2 pages at a time.	O(n/2)
+- Third Approach : Open the middle part of the book, 
+	   	   and see if the word "Plyometric" is on the left part of the book or on the right. (log n)
+
+First Approach :
+1 Pick up dictionary 
+2 Open the first page
+3 Look at page
+4 If "Plyometric" is on the page 
+5 	Copy the word
+6 Else if "Plyometric" is not on the page (1)
+7 	Go to the next page (2)
+8 	Go back to line 3
+9 Else
+10 	Quit
+
+Second Approach :
+1 Pick up Dictionary
+2 Open the third page
+3 Look at page
+4 If "Plyometric" is on the page
+5 	Copy the word
+6 Else if "Plyometric" is not on page (2)
+7 	Go to the next 2 pages (4)
+8	Go back to line 3
+9 Else
+10 	Quit
+
+Third Approach : 
+1 Pick up dictionary
+2 Open to the middle section of the dictionary
+3 Look at page
+4 if "Plyometric" is on the page
+5 	Copy the word
+6 Else if "Plyometric" is earlier on the dictionary (1000)
+7 	Open the middle section from the left half of the dictionary (500)
+8 	Go back to line 3
+9 Else if "Plyometric" is later on the dictionary
+10 	Open the middle section from the right half of the dictionary
+11 	Go back to line 3
+12 Else
+13 	Quit
+
+
